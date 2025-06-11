@@ -25,6 +25,12 @@ jobs:
         with:
           fetch-depth: 1
 
+      # --- cleanup step: remove old content folder ---
+      - name: Remove existing /content folder
+        run: |
+          echo "Cleaning up previous content folder (if it exists)…"
+          rm -rf content
+
       # --- additional step: pull Obsidian notes ---
       - name: Pull obsidian-notes into /content
         uses: actions/checkout@v4
@@ -88,6 +94,15 @@ jobs:
           labels: |
             maintainer=${{ github.repository_owner }}
             org.opencontainers.image.source="https://github.com/${{ github.repository_owner }}/quartz"
+
+      # --- additional step: sanity-check the workspace layout ---
+      - name: List workspace and content folder
+        run: |
+          echo "== $(pwd) =="
+          echo "--- root listing ----------------------"
+          ls -al
+          echo "--- content/ listing ------------------"
+          ls -al content || true   # won't error if the folder is missing
 
       - name: Build and push Docker image
         id: build-and-push
