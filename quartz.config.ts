@@ -2,20 +2,18 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 /**
- * Quartz 4 Configuration
- *
  * See https://quartz.jzhao.xyz/configuration for more information.
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "kenf's 2¢s", # TODO: update
+    pageTitle: "kenf's 2¢s",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "google",
-	  tagId: "" # TODO: update
-    },
+	  tagId: "G-0J2N7RWM95"
+	},
     locale: "en-SG",
     baseUrl: "quartz-template.kenf.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
