@@ -10,6 +10,7 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
+        <p>view more of my stuff:</p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
