@@ -1,0 +1,4 @@
+- encrypt in transit and at rest
+- sanitize all user inputs or any input parameters exposed to user to prevent [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting) and [SQL injection](https://en.wikipedia.org/wiki/SQL_injection)
+- use parameterized queries to prevent SQL injection
+- use the principle of [least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege)

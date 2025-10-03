@@ -1,21 +1,25 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
+const pageTitle = process.env.PAGE_TITLE || ""
+const tagId = process.env.GOOGLE_ANALYTICS_TAG_ID || ""
+const baseUrl = process.env.BASE_URL || ""
+
 /**
  * See https://quartz.jzhao.xyz/configuration for more information.
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "kenf's 2¢s",
+    pageTitle: pageTitle,
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "google",
-	  tagId: "G-0J2N7RWM95"
-	},
-    locale: "en-SG",
-    baseUrl: "quartz-template.kenf.dev",
+      tagId: tagId,
+    },
+    locale: "en-US",
+    baseUrl: baseUrl,
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {

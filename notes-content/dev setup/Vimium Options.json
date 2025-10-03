@@ -1,0 +1,23 @@
+{
+  "keyMappings": "unmap <c-e>\nunmap <c-y>\nunmap r\nunmap yy\nunmap p\nunmap P\nunmap x\nunmap X\nunmap g0\nunmap g$\nunmap yt\nunmap t\nunmap H\nunmap L\nunmap o\nunmap O\nunmap b\nunmap B\nunmap J\nunmap gT\nunmap K\nunmap gt\nunmap ^\nunmap <a-p>\nunmap <a-m>",
+  "grabBackFocus": true,
+  "settingsVersion": "2.2.1",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://mail.google.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https://app.ellieplanner.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://docs.google.com/*"
+    },
+    {
+      "passKeys": "*",
+      "pattern": "https://leetcode.com/*"
+    }
+  ]
+}
