@@ -37,7 +37,7 @@
 
 > [!warning] warning/caution/attention
 > ```
-> [!warning] warning/caution/attention
+> > [!warning] warning/caution/attention
 > ```
 
 > [!danger] danger/error
