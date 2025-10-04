@@ -1,11 +1,16 @@
-- installing this package automatically starts and runs Caddy as a [systemd service](https://caddyserver.com/docs/running#linux-service) named `caddy`
+---
+title: setting up caddy on ubuntu server
+---
 ```
+# add caddy's official GPG key:
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-sudo apt update
+
+# install caddy
 sudo apt install caddy
 ```
+- installing this package automatically starts and runs Caddy as a [systemd service](https://caddyserver.com/docs/running#linux-service) named `caddy`
 
 - edit configuration: `sudo nvim /etc/caddy/Caddyfile`
 - verify service is running: `systemctl status caddy` 
