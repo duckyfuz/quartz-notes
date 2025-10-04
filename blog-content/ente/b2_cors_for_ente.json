@@ -1,0 +1,37 @@
+[
+  {
+    "corsRuleName": "entephotos",
+    "allowedOrigins": [
+      "*"
+    ],
+	"allowedHeaders": [
+	  "range",
+	  "authorization",
+	  "Referer",
+	  "Content-Type",
+	  "X-Bz-File-Name",
+	  "X-Bz-Part-Number",
+	  "X-Bz-Content-Sha1",
+	  "X-Auth-Token",
+	  "X-Client-Package",
+	  "X-Client-Version",
+	  "X-Auth-Access-Token"
+	],
+    "allowedOperations": [
+      "b2_download_file_by_id",
+      "b2_download_file_by_name",
+      "b2_upload_file",
+      "b2_upload_part",
+      "s3_get",
+      "s3_post",
+      "s3_put",
+      "s3_head"
+    ],
+    "exposeHeaders": [
+      "X-Amz-Request-Id",
+      "X-Amz-Id-2",
+      "ETag"
+    ],
+    "maxAgeSeconds": 3600
+  }
+]
