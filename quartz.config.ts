@@ -76,6 +76,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.HardLineBreaks(),
+      Plugin.ContentIndex({ enableSiteMap: true, enableRSS: true }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
