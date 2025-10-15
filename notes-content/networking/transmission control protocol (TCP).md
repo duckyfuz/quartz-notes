@@ -1,14 +1,12 @@
-#Networking #TCP
-
-**Background**
-- TCP provides an effective abstraction of a reliable network running over an unreliable channel
-	- retransmission of lost data, in-order delivery, congestion control & avoidance, data integrity, and more!
-- optimized for accurate delivery, rather than speed
-- HTTP standard does not mandate TCP as the only transport protocol - but almost all HTTP traffic is delivered via TCP due to the convenient features out of the box
+---
+tags:
+  - Networking
+  - TCP
+---
 ### Three-Way Handshake
-1. SYN: client picks a random sequence number x and sends a SYN packet, which can also include additional TCP flags & options
-2. SYN ACK: server increments x by 1, picks its own random sequence number y, appends its own set of flags & options, then dispatches the response
-3. ACK: client increments both x and y by 1 and completes the handshake by dispatching the last ACK packet in the handshake
+1. ➡️ SYN: client picks a random sequence number x and sends a SYN packet, which can also include additional TCP flags & options
+2. ⬅️ SYN ACK: server increments x by 1, picks its own random sequence number y, appends its own set of flags & options, then dispatches the response
+3. ➡️ ACK: client increments both x and y by 1 and completes the handshake by dispatching the last ACK packet in the handshake
 after this process, the application data can begin to flow between the client & the server - the client can send a data packet immediately after the ACK packet, but the server needs to wait for the ACK packet before it can dispatch any data
 
 - the delay imposed by the 3-way handshake is a minimum of 2xT<sub>p</sub> which makes new TCP connections expensive to create - hence why connection reuse is a critical optimization
@@ -70,3 +68,5 @@ after this process, the application data can begin to flow between the client & 
 - send fewer bits - eliminate unnecessary resources
 - move the bits closer - use a CDN
 - reuse existing TCP connections
+
+#Networking #TCP

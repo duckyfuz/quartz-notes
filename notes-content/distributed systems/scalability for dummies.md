@@ -28,11 +28,11 @@
 		- also makes async processing possible
 
 ### Asynchronism
-- Async #1: "bake the cakes at night and sell them in the morning"
+- async #1: "bake the cakes at night and sell them in the morning"
 	- can be used to turn dynamic content into static content
 		- eg. pages built w. a massive framework or CMS can be pre-rendered and locally stored as static HTML file on every change
 	- can schedule with a cronjob!
-- Async #2: "handling special cake requests"
+- async #2: "handling special cake requests"
 	- cannot foresee these types of requests
 	- sends the job to a queue - signal to the user that the job is in work
 		- frontend constantly checks for a "job is done" signal (very simplified eg!!)
