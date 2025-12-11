@@ -42,6 +42,7 @@ zpool status
 
 moving lxc: `pct move 102 rootfs --storage tank`
 - beforehand, can run `pct config 102` to see where the data is - eg. `rootfs`
+
 moving vm: `qm disk move 103 scsi0 --storage tank`
 - beforehand, can run `qm config 103` to see where the data is - eg. `scsi0`
 
