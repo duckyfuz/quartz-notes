@@ -22,4 +22,12 @@ sudo usermod -aG wheel <username> # take note that the usergroup is wheel
 id <username> # verify changes
 ```
 
+#### switching users
+```bash
+machinectl shell --uid <username> # provides a cleaner, fully isolated user session for systemd management, unlike su
+
+sudo su
+su <username>
+```
+
 #techops
