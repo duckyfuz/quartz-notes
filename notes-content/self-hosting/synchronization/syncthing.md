@@ -14,10 +14,21 @@ sudo brew services start syncthing
 ```bash
 sudo apt install syncthing
 sudo apt install jq # for convenience
-
-systemctl enable syncthing
-systemctl start syncthing
 ```
+
+add the [service file](https://github.com/syncthing/syncthing/tree/main/etc/linux-systemd/user) into the load path of the user (eg. `~/.config/systemd/user/`)
+
+```bash
+systemctl --user enable syncthing.service
+systemctl --user start syncthing.service
+```
+
+>[!note] how can we get automatic startup at boot instead of at login?
+>- we need to enable `systemd` lingering (also used here: [[podman]])
+>```bash
+>sudo loginctl enable-linger <username>
+systemctl --user enable syncthing.service
+>```
 ####  iOS / iPadOS (third-party)
 install [Synctrain](https://testflight.apple.com/join/2f54I4CM) via [TestFlight](https://apps.apple.com/us/app/testflight/id899247664)
 ### configuration
