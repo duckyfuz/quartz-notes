@@ -7,9 +7,7 @@ tags:
 ---
 - **NODE**: the node receiving the new IP address
 - **CLUSTER**: all other Proxmox nodes that will maintain quorum and remain connected
-# change proxmox node ip in cluster
-
-## on node (getting new ip)
+## on NODE
 1. edit `/etc/pve/corosync.conf`
    - update node's ip
    - increment `config_version`
@@ -22,7 +20,7 @@ tags:
    systemctl restart pve-cluster
    ```
 
-## on cluster (all other nodes)
+## on CLUSTER
 1. verify new `corosync.conf` is present
 2. restart corosync on each node:
    ```bash
@@ -37,7 +35,7 @@ cat /etc/pve/.members
 ```
 should show all nodes with correct ips.
 
-## cleanup (on node)
+## cleanup (on NODE)
 - update `/etc/issue` (optional)
 - update `/etc/pve/storage.cfg` if old ip referenced
 - update `/etc/pve/priv/known_hosts` (optional)
