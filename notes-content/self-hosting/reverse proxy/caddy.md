@@ -1,5 +1,8 @@
 ---
-title: setting up caddy on ubuntu server
+tags:
+  - self-hosting
+  - reverse-proxy
+  - caddy
 ---
 ```
 # add caddy's official GPG key:
@@ -25,3 +28,5 @@ sudo apt install caddy
 
 ##### more details
 - https://caddyserver.com/docs/running#using-the-service
+
+#self-hosting #reverse-proxy #caddy 
