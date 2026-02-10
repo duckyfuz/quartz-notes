@@ -6,13 +6,11 @@ tags:
   - lvm
   - zfs
 ---
-LVM: Logical Volume Manager
-
-ZFS: Zettabyte File System
-
-##### context
+- **LVM**: Logical Volume Manager
+- **ZFS**: Zettabyte File System
+##### context (storytime!)
 - i set up proxmox (2 nodes) with lvm instead of zfs
-- hence, no replication -> how can I add in zfs (but without buying two more ssds?)
+- hence, no replication... -> how can I add in zfs (but without buying more ssds?)
 ##### solution
 resize lvm-thin -> create zfs -> move containers (and vms) over
 ##### something like this:

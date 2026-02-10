@@ -19,5 +19,7 @@ sudo dnf history list
 dnf history undo <id>
 dnf history redo <id>
 ```
+- DNF is package manager, used to install RPM packages
+- DNF itself is distributed as a RPM package on RPM-based distros
 
 #techops #linux #dnf 

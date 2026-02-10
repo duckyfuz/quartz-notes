@@ -4,7 +4,7 @@ tags:
   - UDP
   - QUIC
 ---
-### why is QUIC quick
+### why is QUIC quick?
 a Layer 4 protocol that uses another Layer 4 protocol (UDP) as its foundation to create a new, more powerful transport service
 - the transport layer protocol of choice for HTTP/3
 
