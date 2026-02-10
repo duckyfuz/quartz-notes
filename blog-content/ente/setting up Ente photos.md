@@ -36,7 +36,7 @@ ente-api.your-domain.com {
 ```
 
 #### setting up b2 bucket
-backblaze b2 is s3 compatible (and a lot cheaper), which is why we will be using it for this project. we will need to create add the following rules to enable CORS
+backblaze b2 is s3 compatible (and a lot cheaper), which is why we will be using it for this project. we will need to create ad§d the following rules to enable CORS
 
 ```
 b2 bucket update --cors-rules "$(<./b2_cors_for_ente.json)" b2-bucket-name allPrivate
@@ -51,19 +51,21 @@ b2 bucket update --cors-rules "$(<./b2_cors_for_ente.json)" b2-bucket-name allPr
     "allowedOrigins": [
       "*"
     ],
-        "allowedHeaders": [
-          "range",
-          "authorization",
-          "Referer",
-          "Content-Type",
-          "X-Bz-File-Name",
-          "X-Bz-Part-Number",
-          "X-Bz-Content-Sha1",
-          "X-Auth-Token",
-          "X-Client-Package",
-          "X-Client-Version",
-          "X-Auth-Access-Token"
-        ],
+	"allowedHeaders": [
+	  "range",
+	  "authorization",
+	  "Referer",
+	  "Content-Type",
+	  "X-Bz-File-Name",
+	  "X-Bz-Part-Number",
+	  "X-Bz-Content-Sha1",
+	  "X-Auth-Token",
+	  "X-Client-Package",
+	  "X-Client-Version",
+	  "X-Auth-Access-Token",
+	  "UPLOAD-URL",
+	  "Content-MD5"
+	],
     "allowedOperations": [
       "b2_download_file_by_id",
       "b2_download_file_by_name",
@@ -84,7 +86,7 @@ b2 bucket update --cors-rules "$(<./b2_cors_for_ente.json)" b2-bucket-name allPr
 ]
 ```
 
-credit: [mnvr](https://github.com/ente-io/ente/discussions/1764#discussioncomment-9478204) from Ente
+credit: [mnvr](https://github.com/ente-io/ente/discussions/1764#discussioncomment-9478204) from Ente + [this](https://ente.io/help/self-hosting/troubleshooting/uploads)
 
 #### linking b2 to Ente
 ```
