@@ -2,9 +2,11 @@ what's kanata? kanata is  like karabiner, but available on linux, macOS, and win
 
 
 download kanata [here](https://github.com/jtroo/kanata/releases)
+uinput groups setup guide [here](https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md)
 
 
 `kanata.service`
+add to: `~/.config/systemd/user/kanata.service`
 ```
 [Unit]
 Description=Kanata keyboard remapper
