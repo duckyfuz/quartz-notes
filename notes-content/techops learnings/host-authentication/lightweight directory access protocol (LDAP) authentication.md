@@ -3,6 +3,7 @@ tags:
   - techops
   - host-authentication
   - ldap
+  - linux
 ---
 ### why is LDAP used?
 - centralized identity management: one directory for all users, groups, hosts, and services

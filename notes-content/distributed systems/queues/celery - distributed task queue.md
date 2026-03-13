@@ -1,3 +1,8 @@
+---
+tags:
+  - distributed-systems
+  - databases
+---
 - designed to process large amounts of messages and run tasks concurrently, allowing for greater scalability and efficiency in executing workloads
 
 
@@ -13,3 +18,6 @@
 	- also supports custom error handling to manage the different situations that might occur during task processing
 - periodic tasks: has a scheduler to handle periodic tasks, similar to CRON jobs
 - task workflow: supports complex workflows where tasks can be chained together, executed in parallel, or handled using other paradigms such as groups and chords
+
+
+#distributed-systems #databases

@@ -1,3 +1,8 @@
+---
+tags:
+  - linux
+  - techops
+---
 #### RAID 0 (striping)
 - data is split into blocks and written across multiple discs simultaneously
 - high read/write speeds, but no fault tolerance
@@ -20,3 +25,5 @@
 	- data is first mirrored and then striped across those mirrored sets
 - excellent performance and good fault tolerance
 	- requires minimum of four drives and loses 50% of the total disk space
+
+#linux #techops

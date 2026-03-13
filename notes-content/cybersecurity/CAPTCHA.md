@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+  - auth
+---
 - ensure that the user on the other end is not a bot
 - can be viewed as a bot-mitigation control or part of an access-management policy
 	- usually wrapped into WAFs such as CloudFlare, AWS shield
@@ -15,3 +20,5 @@
 #### proof-of-work / proof-of-time (Brave's BAT CAPTCHA, Hashcash)
 - forces the client to do a small but non-parallelizable computation (eg. SHA256 with a certain number of leading zeros)
 	- a regular browser barely notices, but a botnet will need to burn real CPU / GPU time per request, making mass abuse expensive
+
+#security #auth

@@ -1,3 +1,8 @@
+---
+tags:
+  - linux
+  - techops
+---
 ```
 $ touch a
 no space left on device
@@ -24,3 +29,5 @@ there are 2 possible reasons
 2. there is a hard link to the file
 	- `ls -i log` -> `find / -inum <inode_number>`
 	- we can also use `ls -l` to find the number of hard links to a file (2nd column)
+
+#linux #techops

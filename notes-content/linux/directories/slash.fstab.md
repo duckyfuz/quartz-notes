@@ -1,2 +1,9 @@
+---
+tags:
+  - linux
+  - techops
+---
 defines which filesystems are mounted at boot and their mount points, options, and parameters
 - each line represents a filesystem entry with fields for device/partition, mount point, filesystem type, mount options, dump flag, and fsck order
+
+#linux #techops

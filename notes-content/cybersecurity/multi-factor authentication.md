@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+  - auth
+---
 good reference: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
 - combines factors from 3 categories: (1) knowledge, (2) possession, and (3) inherence
 	- inherence: something you are - eg. fingerprint, voiceprint
@@ -23,3 +28,5 @@ good reference: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authe
 	- security key uses its private key to sign the challenge
 	- signed response is sent back to the website
 	- website verifies the signature using the stored public key
+
+#security #auth

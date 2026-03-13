@@ -1,3 +1,8 @@
+---
+tags:
+  - distributed-systems
+  - databases
+---
 - MySQL is preferred for managing read-only operations - not for concurrency
 - PostgreSQL is preferred for read-write operations, large datasets, and complex queries - not for read-only operations
 
@@ -23,3 +28,5 @@ COMMIT;
 	- Non-repeatable reads: Getting different results when reading the same row multiple times within a single transaction because another transaction modified it in between reads.
 	- Phantom reads: Getting different sets of rows when running the same query multiple times within a single transaction because another transaction inserted or deleted rows that match the query criteria.
 **Durability**: Guarantees that once a transaction has been successfully committed, its changes are permanent and will survive any subsequent system failures
+
+#distributed-systems #databases

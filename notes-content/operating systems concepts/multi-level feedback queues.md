@@ -1,3 +1,7 @@
+---
+tags:
+  - os
+---
 - **rule 1**: if Priority(A) >Priority(B), A runs (B doesn’t)
 - **rule 2**: if Priority(A)= Priority(B), A & B run in round-robin fashion using the time slice (quantum length) of the given queue
 - **rule 3**: when a job enters the system, it is placed at the highest priority (the topmost queue)
@@ -17,3 +21,5 @@
 - some systems allow users to easily set parameters
 - some systems allow user 'advice' to help set priorities
 	- eg. using `nice` increase the priority of a job
+
+#os

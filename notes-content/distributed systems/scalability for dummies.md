@@ -1,3 +1,8 @@
+---
+tags:
+  - distributed-systems
+  - databases
+---
 ### Clones
 - most web services are hidden behind a load balancer
 	- we need to ensure that users always get the same results of his request back, independent of what server he 'landed on'
@@ -36,3 +41,5 @@
 	- cannot foresee these types of requests
 	- sends the job to a queue - signal to the user that the job is in work
 		- frontend constantly checks for a "job is done" signal (very simplified eg!!)
+
+#distributed-systems #databases

@@ -1,3 +1,8 @@
+---
+tags:
+  - linux
+  - techops
+---
 pipe: `|`
 redirection: `<` or `>`
 
@@ -21,3 +26,5 @@ input redirection: `some_prog < in.txt`
 
 running programs in pipelines: `cat log.txt | grep "ERROR"`
 - shell creates a pipe, connects the stdout of the first process to the write side of the pipe, and connects the stdin of the second process to the read side of the pipe
+
+#linux #techops

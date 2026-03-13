@@ -3,6 +3,7 @@ tags:
   - techops
   - host-authentication
   - ssh
+  - linux
 ---
 ### client-side
 #### generating ssh keys

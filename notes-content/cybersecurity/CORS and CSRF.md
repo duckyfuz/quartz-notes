@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+  - auth
+---
 CORS: cross origin resource sharing
 CSRF: cross-site request forgery
 
@@ -7,3 +12,5 @@ CSRF: cross-site request forgery
 
 - to prevent CSRF attacks, a simple way is to use nonces (as CSRF tokens)
 	- a nonce is a random or unique value that is generated for each request - it can only be used once
+
+#security #auth

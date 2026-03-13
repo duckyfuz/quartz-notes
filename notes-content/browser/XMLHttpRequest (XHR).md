@@ -1,3 +1,8 @@
+---
+tags:
+  - browser
+  - networking
+---
 **Background**
 - enables the client to script data transfers via JS
 - one of the key technologies behind the Asynchronus JS & XML (AJAX) revolution
@@ -75,3 +80,5 @@
 - leveraging a long-held HTTP request ("a hanging GET") to allow the server to push data to the browser is commonly known as "Comet", or "reverse AJAX", "AJAX push", "HTTP push"
 - trivia: Facebook's Chat (2008) used long polling to get messages!
 	- today, Server-Sent Events and WebSocket are more efficient - but long-polling is used as a fallback strategy
+
+#browser #networking

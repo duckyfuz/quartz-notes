@@ -1,3 +1,8 @@
+---
+tags:
+  - linux
+  - techops
+---
 fsck (File System ChecK) is essentially a front-end for filesystem specific checkers
 - fsck can be used to restore the primary superblock of a filesystem if it becomes corrupted
 ```bash
@@ -14,3 +19,6 @@ sudo fsck -b 32768 /dev/sdb1 # execute with the selected superblock's block numb
 > - (2) verifies that all objects are reachable from a designated set of "head" nodes and that the connections between objects are valid, 
 > - (3) identifies corruption - any inconsistencies found, and 
 > - (4) finds unreachable and dangling objects
+
+
+#linux #techops

@@ -2,6 +2,7 @@
 tags:
   - techops
   - host-authentication
+  - linux
 ---
 a security mechanism that verifies and authorizes access based on the identity of the host machine rather than individual user accounts
 

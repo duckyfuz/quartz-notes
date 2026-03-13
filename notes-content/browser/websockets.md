@@ -1,3 +1,8 @@
+---
+tags:
+  - browser
+  - networking
+---
 **Background**
 - enables bidirectional, message-oriented streaming of text and binary data
 	- closest API to a raw network socket in the browser
@@ -13,3 +18,5 @@
 - while the primary use case for the WebSocket protocol is to provide an optimized bi-directional communication channel between applications running in the browser and the server, it can be used outside the browser and can be negotiated via a non-HTTP exchange
 
 https://hpbn.co/websocket/
+
+#browser #networking

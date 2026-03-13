@@ -1,3 +1,7 @@
+---
+tags:
+  - os
+---
 why is external fragmentation a thing 😔
 #### best fit
 chooses the **smallest** block that is large enough to accommodate the new process
@@ -37,3 +41,6 @@ as a result, memory reuse is fast and reduces fragmentation
 > - eg. balanced binary trees, splay trees, or partially-ordered trees
 > > [!tip] a heap is a type of partially ordered tree, but with additional constraints
 > > - also a complete binary tree, meaning all levels are filled except possibly the last, which is filled from left to right
+
+
+#os

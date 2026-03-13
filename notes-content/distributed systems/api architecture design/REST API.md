@@ -1,3 +1,8 @@
+---
+tags:
+  - distributed-systems
+  - databases
+---
 a basic HTTP request consists of a verb (method) and a resource (endpoint)
 
 | Verb   | Description                                                | Idempotent* | Safe | Cacheable                               |
@@ -10,3 +15,5 @@ a basic HTTP request consists of a verb (method) and a resource (endpoint)
 \*can be called many times without different outcomes
 
 - **loosely coupled**
+
+#distributed-systems #databases

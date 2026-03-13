@@ -1,3 +1,8 @@
+---
+tags:
+  - linux
+  - techops
+---
 virtual filesystems are made up of inodes, data blocks, and superblocks
 
 ![[inodes.webp]]
@@ -33,3 +38,5 @@ virtual filesystems are made up of inodes, data blocks, and superblocks
 3. indexed allocation
 	- inodes employs a combination of aspects from both linked and indexed allocation methods
 	- allowing for the fast and direct access benefits of indexed allocation and the extendability of linked allocation through indirect blocks (and multilevel indexes)
+
+#linux #techops

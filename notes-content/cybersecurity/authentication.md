@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+  - auth
+---
 #### Single Sign-On (SSO)
 - allows users to authenticate once and gain access to multiple applications without needing to log in separately to each one.
 - Ideal for organizations with multiple internal or third-party applications. SSO enhances the user experience by reducing login fatigue and boosts administrative control by centralizing user access management.
@@ -21,3 +26,6 @@
 >[!tip] OAuth vs. OpenID Connect
 > - **OAuth** is an **authorization** protocol, meaning it’s used to grant permissions for third-party services to access a user's data.
 > - **OIDC** extends OAuth to provide **authentication** capabilities, meaning it helps verify the user’s identity and returns identity information like name, email, etc. It is often used in conjunction with OAuth to provide a complete authentication and authorization solution.
+
+
+#security #auth

@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+  - auth
+---
 - essentially acts as an [[reverse proxy]], but with much more features
 - known for (1) securing websites, (2) optimizing performance and (3) protection from malicious attacks; also offers (1) identity and (2) access management services
 #### key features
@@ -8,3 +13,6 @@
 	- provides challenge mechanisms ([[CAPTCHA]], JS challenges)
 - web application firewall (WAF) - an additional layer of protection against threats like SQL injection and cross-site scripting (XSS), amongst others
 - identity & access management - provides SSO & MFA integration
+
+
+#security #auth

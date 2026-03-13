@@ -1,3 +1,7 @@
+---
+tags:
+  - os
+---
 main criteria: fairness & balance
 - fairness: fair share of CPU time, no starvation
 - balance: all parts of the computing system should be utilized
@@ -13,3 +17,5 @@ two types of policies:
 - criteria: response time (req -> res) & predictability (variation in response time)
 #### real time processing
 - essentially, tasks have deadlines
+
+#os

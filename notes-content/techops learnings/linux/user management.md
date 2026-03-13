@@ -1,6 +1,7 @@
 ---
 tags:
   - techops
+  - linux
 ---
 ```bash
 # ubuntu server

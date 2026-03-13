@@ -1,3 +1,8 @@
+---
+tags:
+  - browser
+  - networking
+---
 #SSE
 
 **Background**
@@ -52,3 +57,5 @@
 - SSE is a simple and convenient on top of a regular HTTP connection, but existing network middleware (eg. proxy servers, firewalls), which are not SSE aware may cause problems - intermediaries may choose the buffer the event-stream data, which translates to increased latency or a broken SSE connection
 	- can consider delivering an SSE event-stream over a TLS connection (instead of HTTP)
 		- according to Chat: when traffic is encrypted with TLS, the intermediaries are unable to inspect the contents of the messages and thus more likely to fwd it as-is instead of manipulating it
+
+#browser #networking

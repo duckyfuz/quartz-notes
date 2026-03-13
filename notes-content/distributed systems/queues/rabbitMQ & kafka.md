@@ -1,3 +1,8 @@
+---
+tags:
+  - distributed-systems
+  - databases
+---
 - these services are considered **message brokers**
 - facilitate communication between different components of a distributed application by allowing for the asynchronous exchange of messages
 - used to scale services - [[scalability for dummies]]
@@ -39,3 +44,6 @@
 	- consumers subscribes to Q for new data, and sends an ACK after processing
 	- ie. if a consumer fails -> ACK is not received -> after timeout, RabbitMQ sends to another consumer
 - usually, services that use Kafka can tolerate messages being dropped to some extent
+
+
+#distributed-systems #databases

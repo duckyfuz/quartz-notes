@@ -1,3 +1,8 @@
+---
+tags:
+  - browser
+  - networking
+---
 #browser
 
 **Background**
@@ -27,3 +32,5 @@
 - there is no one best protocol or API - every non-trivial application will require a mix of different transport based on their requirements
 ![[Screenshot 2025-02-17 at 10.33.41.png]]
 - the above comparison is incomplete! but serves as an illustration of the differences among each protocol
+
+#browser #networking

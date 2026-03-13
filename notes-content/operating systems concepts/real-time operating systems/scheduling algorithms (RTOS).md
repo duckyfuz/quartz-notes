@@ -1,3 +1,7 @@
+---
+tags:
+  - os
+---
 refer to [[scheduling environments]] for context
 #### round robin (preemptive FCFS)
 - FIFO queue
@@ -17,3 +21,5 @@ low priority processes can starve -> consider using multi-level feedback queues 
 #### rate monotonic scheduling (RMS)
 - is the optimal assignment of priorities
 #### earliest deadline first scheduling (EDF)
+
+#os

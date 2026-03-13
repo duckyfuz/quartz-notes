@@ -1,3 +1,7 @@
+---
+tags:
+  - os
+---
 ### 1. power supply initialization
 - power supply unit (PSU) sends electricity to the essential components
 ### 2. BIOS / UEFI startup & POST (power on self test)
@@ -18,3 +22,5 @@
 ### 5. starting system services and daemons
 - networking services, printing services, graphical display manager (X-server / Wayland)
 - 
+
+#os

@@ -1,3 +1,7 @@
+---
+tags:
+  - os
+---
 **monolithic OS**
 - kernel is one big special program
 - **advantages**: well understood & good performance
@@ -13,3 +17,6 @@
 - **advantages**: more robust and extendible - there is better isolation and protection between kernel and high level services
 - **disadvantages**: lower performance
 
+
+
+#os

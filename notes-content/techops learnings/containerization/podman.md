@@ -3,6 +3,7 @@ tags:
   - techops
   - containerization
   - podman
+  - linux
 ---
 #### adding podrunner user & creating basic dirs
 ```bash

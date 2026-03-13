@@ -1,3 +1,7 @@
+---
+tags:
+  - os
+---
 there are 4 main approaches to managing free space:
 1. bitmap or bit vector:
 	- simple to understand & finding the first free block is efficient
@@ -14,3 +18,5 @@ there are 4 main approaches to managing free space:
 4. free list
 	- fast allocation as free blocks are known upfront
 	- extra memory needed to store the list + fragmentation over time
+
+#os
