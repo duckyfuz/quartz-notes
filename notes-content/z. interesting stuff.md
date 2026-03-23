@@ -1,5 +1,3 @@
-STDUY LINUX FUNDAMENTALS TOO!!!!
-
 Fast C++: https://www.youtube.com/watch?v=sX2nF1fW7kI
 
 Distributed Systems:
