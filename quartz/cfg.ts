@@ -26,6 +26,11 @@ export type Analytics =
       scriptSrc?: string
     }
   | {
+      provider: "rybbit"
+      siteId: string
+      host?: string
+    }
+  | {
       provider: "posthog"
       apiKey: string
       host?: string

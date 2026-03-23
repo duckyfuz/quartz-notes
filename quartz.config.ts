@@ -2,7 +2,7 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 const pageTitle = process.env.PAGE_TITLE || ""
-const tagId = process.env.GOOGLE_ANALYTICS_TAG_ID || ""
+const rybbitSiteId = process.env.RYBBIT_SITE_ID || ""
 const baseUrl = process.env.BASE_URL || ""
 
 /**
@@ -15,8 +15,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "google",
-      tagId: tagId,
+      provider: "rybbit",
+      siteId: rybbitSiteId,
+      host: "https://rybbit.kenf.dev/api",
     },
     locale: "en-US",
     baseUrl: baseUrl,

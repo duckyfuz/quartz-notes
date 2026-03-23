@@ -156,6 +156,14 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
 
       document.head.appendChild(goatcounterScript);
     `)
+  } else if (cfg.analytics?.provider === "rybbit") {
+    componentResources.afterDOMLoaded.push(`
+      const rybbitScript = document.createElement('script');
+      rybbitScript.src = '${cfg.analytics.host ?? "https://rybbit.com/api"}/script.js';
+      rybbitScript.setAttribute('data-site-id', '${cfg.analytics.siteId}');
+      rybbitScript.defer = true;
+      document.head.appendChild(rybbitScript);
+    `)
   } else if (cfg.analytics?.provider === "posthog") {
     componentResources.afterDOMLoaded.push(`
       const posthogScript = document.createElement("script");
