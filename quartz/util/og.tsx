@@ -77,7 +77,8 @@ export async function fetchTtf(
 ): Promise<Buffer<ArrayBufferLike> | undefined> {
   const fontName = rawFontName.replaceAll(" ", "+")
   const cacheKey = `${fontName}-${weight}`
-  const cacheDir = path.join(QUARTZ, ".quartz-cache", "fonts")
+  const cacheDirName = process.env.QUARTZ_CACHE_DIR || ".quartz-cache"
+  const cacheDir = path.join(QUARTZ, cacheDirName, "fonts")
   const cachePath = path.join(cacheDir, cacheKey)
 
   // Check if font exists in cache

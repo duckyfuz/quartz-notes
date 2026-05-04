@@ -30,6 +30,7 @@ import {
   version,
   fp,
   cacheFile,
+  cacheDirName,
   cwd,
 } from "./constants.js"
 
@@ -324,7 +325,7 @@ export async function handleBuild(argv) {
     release()
 
     if (argv.bundleInfo) {
-      const outputFileName = "quartz/.quartz-cache/transpiled-build.mjs"
+      const outputFileName = `quartz/${cacheDirName}/transpiled-build.mjs`
       const meta = result.metafile.outputs[outputFileName]
       console.log(
         `Successfully transpiled ${Object.keys(meta.inputs).length} files (${prettyBytes(

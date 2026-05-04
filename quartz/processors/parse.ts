@@ -52,7 +52,8 @@ function* chunks<T>(arr: T[], n: number) {
 
 async function transpileWorkerScript() {
   // transpile worker script
-  const cacheFile = "./.quartz-cache/transpiled-worker.mjs"
+  const cacheDirName = process.env.QUARTZ_CACHE_DIR || ".quartz-cache"
+  const cacheFile = `./${cacheDirName}/transpiled-worker.mjs`
   const fp = "./quartz/worker.ts"
   return esbuild.build({
     entryPoints: [fp],
